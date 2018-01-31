@@ -5,11 +5,11 @@ p {
 
 p{
   color: #666666;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia,serif;
 }
 
 h1 {
-  font-family: Georgia,"Times New Roman",serif;
+  font-family:Helvetica, sans-serif;
 }
 
 #container {
@@ -28,7 +28,7 @@ h1 {
 
 #nav a:link, #nav a:visited {
 color:#ffffff;
-background-color: #98bf21;
+background-color: purple;
 font-weight: bold;
 display: block;
 text-decoration: none;
@@ -38,16 +38,9 @@ padding: 4px;
 }
 
 #nav a:hover, #nav a:active {
-  background-color: #7a991a
+  background-color: #889cd8
 }
 
-.caption{
-  color: black;
-  font-family: Georgia, "Times New Roman", serif;
-  font-style:italic;
-  font-size: 0.8em;
-  margin-top: 0;
-  text-align: right;
 
 }
 #footer{
@@ -59,4 +52,7 @@ padding: 4px;
 
 img{
   border:none;
+  margin: 0 auto;
+  padding: 0;
+  width: 95%;
 }
