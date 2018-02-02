@@ -4,8 +4,11 @@ p {
 } */
 
 p{
-  color: #666666;
+  color: blue;
   font-family: Georgia,serif;
+  size: 10px;
+  text-align:left;
+
 }
 
 h1 {
