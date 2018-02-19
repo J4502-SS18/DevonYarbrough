@@ -4,9 +4,21 @@
   color: red;
 }*/
 
+.photo_aside {
+  width:33%;
+  max-width: 200px;
+  margin-right:10px;
+  float:left
+}
+.clear {
+  clear:both;
+}
+
 img {
   border: none;
-  width: 100%;
+  float: right;
+  width: 60%;
+
 
 p {
   font-family: 'Merriweather Sans', Helvetica, Arial, sans-serif;
