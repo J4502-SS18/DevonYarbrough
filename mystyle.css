@@ -72,8 +72,22 @@ h1 {
     font-size: 0.6em;
     border-top: 1px solid #6f0000;
   }
+
 img{
   width: 100%;
+}
+
+.aside-1 {
+  background: white;
+}
+
+.aside-2 {
+  background: white;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
 }
 
 @media (min-width: 800px) {
@@ -96,5 +110,22 @@ img{
   }
   .image {
       width: 45%;
-      margin-right: 10px;
+      margin-left: 10px;
+      float: right;
   }
+
+  .story {
+      width: 45%;
+  }
+
+  .first {
+      margin-top: 0;
+  }
+
+  article {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+  }
+
+}
