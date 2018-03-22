@@ -85,7 +85,7 @@ img{
   background: white;
 }
 
-header, article, aside, footer {
+header, article, footer {
   flex: 1 100%;
   padding: 10px;
 }
@@ -113,7 +113,7 @@ header, article, aside, footer {
       margin-left: 10px;
       float: right;
   }
-
+  
   .story {
       width: 45%;
   }
