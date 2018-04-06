@@ -187,7 +187,7 @@ article:last-of-type {
 @media screen and (min-width:1000px) {
   article {
     display: grid;
-    grid-template-columns:1fr 800px;
+    grid-template-columns:200px 1fr;
     grid-gap: 20px;
     grid-template-areas:
         "a b b"
@@ -196,7 +196,7 @@ article:last-of-type {
   }
   .image {
     grid-area: a;
-    width: 300px;
+    width: 100%;
     float: left;
   }
 
@@ -214,7 +214,7 @@ article:last-of-type {
 @media screen and (min-width:1200px) {
   article {
     display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-columns: 200px 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
         "a b c";
