@@ -21,10 +21,10 @@ h1 {
   color:#a92a2a;
 }
 
-h4 {
+h2 {
   font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: 0.8em;
-  color:#a92a2a;
+  font-size: 1.0em;
+  color:purple;
 }
 
 
@@ -79,10 +79,11 @@ h4 {
     border-top: 1px solid #6f0000;
   }
 
-img{
-  width: 100%;
-}
-
+  .pullquote {
+    color: purple;
+    font-family: Georgia; serif;
+    font-size: 1.5em;
+  }
 
 header, article, footer {
   flex: 1 100%;
@@ -113,7 +114,7 @@ header, article, footer {
     }
 
   .section1 {
-      width: 45%;
+      width: 100%;
   }
 
   .first {
@@ -137,6 +138,15 @@ nav ul {
   flex-flow: column;
 }
 
+.authorbox img {
+  /*visibility: hidden;*/
+  display: none;
+}
+
+.pullquote {
+  display: none;
+}
+
 article {
   margin-bottom: 0.7em;
   border-bottom: 1px solid #ccc;
@@ -144,19 +154,6 @@ article {
 
 article:last-of-type {
   border-bottom: none;
-}
-
-.image {
-  width: 45%;
-  margin-right: 10px;
-}
-
-.section1 {
-  width: 45%;
-}
-
-.first {
-  margin-top: 0;
 }
 
 @media screen and (min-width: 450px) {
@@ -174,12 +171,31 @@ article:last-of-type {
         width: 80%;
     }
 
+    .authorbox img {
+      display: block;
+      width: 100%;
+      margin-top: 0.5em;
+    }
 
+    .authorbox {
+      width: 25%;
+      max-width: 200px;
+      float: left;
+      margin-right: 20px;
+    }
 }
 
 @media screen and (min-width: 800px) {
-  nav ul li {
+    .item1 {
+      margin-right: auto;
+    }
+
+    nav ul li {
       margin: 5px;
+    }
+
+    .pullquote {
+      display: block;
     }
 
 }
@@ -187,42 +203,50 @@ article:last-of-type {
 @media screen and (min-width:1000px) {
   article {
     display: grid;
-    grid-template-columns:200px 1fr;
+    grid-template-columns: 200px 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
         "a b b"
-        "c c c"
+        "c c e"
         ". d d";
   }
-  .image {
-    grid-area: a;
+
+  .authorbox {
     width: 100%;
-    float: left;
+    grid-area: a;
   }
 
   .section1 {
     grid-area: b;
-    width: 100%;
+  }
+
+  .image {
+    grid-area: c;
   }
 
   .section2 {
-    width: 100%;
-    grid-area: c;
+    grid-area: d;
   }
+
+  .pullquote {
+    margin-top: 0;
+    grid-area: e;
+  }
+
+  .section1 p:first-of-type, .section2 p:first-of-type {
+    margin-top: 0;
+  }
+
 }
 
 @media screen and (min-width:1200px) {
   article {
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: 200px 1fr 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas:
-        "a b c";
+        "a b b e"
+        "c c c ."
+        ". d d .";
   }
 }
-  @media screen and (max-width: 1200px) {
-    .section2 {
-      display: grid;
-    }
-
-  }
