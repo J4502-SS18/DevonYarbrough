@@ -80,7 +80,7 @@ h2 {
   }
 
   .pullquote {
-    color: purple;
+    color: #FF0099;
     font-family: Georgia; serif;
     font-size: 1.5em;
   }
@@ -249,4 +249,11 @@ article:last-of-type {
         "c c c ."
         ". d d .";
   }
+}
+
+@media screen and (max-width: 1200px) {
+  article {
+    display: grid;
+  }
+
 }
