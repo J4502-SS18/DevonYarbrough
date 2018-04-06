@@ -21,9 +21,15 @@ h1 {
   color:#a92a2a;
 }
 
+h4 {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 0.8em;
+  color:#a92a2a;
+}
+
 
 #container {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -77,13 +83,6 @@ img{
   width: 100%;
 }
 
-.aside-1 {
-  background: white;
-}
-
-.aside-2 {
-  background: white;
-}
 
 header, article, footer {
   flex: 1 100%;
@@ -110,11 +109,10 @@ header, article, footer {
   }
   .image {
       width: 45%;
-      margin-left: 10px;
-      float: right;
-  }
-  
-  .story {
+      margin-right: 10px;
+    }
+
+  .section1 {
       width: 45%;
   }
 
@@ -127,5 +125,104 @@ header, article, footer {
       flex-flow: row;
       flex-wrap: wrap;
   }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
+article {
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+.image {
+  width: 45%;
+  margin-right: 10px;
+}
+
+.section1 {
+  width: 45%;
+}
+
+.first {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 450px) {
+
+    nav ul {
+        flex-flow: row;
+        justify-content: space-between;
+    }
 
 }
+
+@media screen and (min-width: 600px) {
+
+    #container {
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (min-width: 800px) {
+  nav ul li {
+      margin: 5px;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+  article {
+    display: grid;
+    grid-template-columns:1fr 800px;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a b b"
+        "c c c"
+        ". d d";
+  }
+  .image {
+    grid-area: a;
+    width: 300px;
+    float: left;
+  }
+
+  .section1 {
+    grid-area: b;
+    width: 100%;
+  }
+
+  .section2 {
+    width: 100%;
+    grid-area: c;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a b c";
+  }
+}
+  @media screen and (max-width: 1200px) {
+    .section2 {
+      display: grid;
+    }
+
+  }
