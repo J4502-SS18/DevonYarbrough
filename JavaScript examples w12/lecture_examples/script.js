@@ -1,2 +1,2 @@
-var today=new Date();
+var today= new Date();
 console.log(today); 
