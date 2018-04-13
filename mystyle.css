@@ -90,6 +90,7 @@ header, article, footer {
   padding: 10px;
 }
 
+/*The start of my Flexbox*/
 @media (min-width: 800px) {
 
   .navigation {
@@ -127,7 +128,7 @@ header, article, footer {
       flex-wrap: wrap;
   }
 }
-
+/*The start of my grid */
 .title {
   display: flex;
   justify-content: space-between;
@@ -257,3 +258,4 @@ article:last-of-type {
   }
 
 }
+/*The Start of my Javascript*/
