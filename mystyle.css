@@ -90,6 +90,7 @@ header, article, footer {
   padding: 10px;
 }
 
+/*The start of my Flexbox*/
 @media (min-width: 800px) {
 
   .navigation {
@@ -127,7 +128,7 @@ header, article, footer {
       flex-wrap: wrap;
   }
 }
-
+/*The start of my grid */
 .title {
   display: flex;
   justify-content: space-between;
@@ -255,5 +256,45 @@ article:last-of-type {
   article {
     display: grid;
   }
+
+}
+/*The Start of my Javascript*/
+
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
+
+header h1 {
+    order: 2;
+    font-size: 2em;
+}
+
+nav ul {
+    display: none;
+}
+
+@media screen and (min-width: 700px){
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
 
 }
