@@ -72,6 +72,21 @@ h2 {
     margin-top: 0;
     text-align: right;
 }
+/*Added map and map wrapper*/
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-wrapper iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
   #footer{
     color: #6f0000;
     font-family: 'Noto Serif', Georgia, serif;
